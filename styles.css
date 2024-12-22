@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'b';
-  src: url('fonts/HelveticaNeueCyr-Bold.woff2') format('woff2');
+  src: url('HelveticaNeueCyr-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'l';
-  src: url('fonts/HelveticaNeueCyr-Light.woff2') format('woff2');
+  src: url('HelveticaNeueCyr-Light.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'li';
-  src: url('fonts/HelveticaNeueCyr-LightItalic.woff2') format('woff2');
+  src: url('HelveticaNeueCyr-LightItalic.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'm';
-  src: url('fonts/HelveticaNeueCyr-Medium.woff2') format('woff2');
+  src: url('HelveticaNeueCyr-Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -25,22 +25,22 @@
 
 @font-face {
   font-family: 'r';
-  src: url('fonts/HelveticaNeueCyr-Roman.woff2') format('woff2');
+  src: url('HelveticaNeueCyr-Roman.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 't';
-  src: url('fonts/HelveticaNeueCyr-Thin.woff2') format('woff2');
+  src: url('HelveticaNeueCyr-Thin.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'ti';
-  src: url('fonts/HelveticaNeueCyr-ThinItalic.woff2') format('woff2');
+  src: url('HelveticaNeueCyr-ThinItalic.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'ul';
-  src: url('fonts/HelveticaNeueCyr-UltraLight.woff2') format('woff2');
+  src: url('HelveticaNeueCyr-UltraLight.woff2') format('woff2');
 }
 
 :root{
