@@ -313,8 +313,6 @@ nav {
 }
 
 .postscriptum {
-  margin-top: 20px;
-  margin-left: 388px;
   font-family: 'l', sans-serif;
   font-size: 18px;
   color: var(--second-color);
@@ -1056,14 +1054,15 @@ nav {
   z-index: 10;
   margin-bottom: 35.71px;
 }
+
 .swiper-pagination-bullet {
-  width: 11.43px !important; /* Размер кружков */
-  height: 11.43px !important;
+  width: 16px !important; /* Размер кружков */
+  height: 16px !important;
   background-color: rgba(0, 0, 0, 0.4) !important; /* Серый цвет */
   border-radius: 50% !important; /* Делаем их круглыми */
   margin: 0 21.43px !important; /* Расстояние между кружками */
   opacity: 0.7 !important; /* Прозрачность */
-  transition: all 0.21s ease !important; /* Плавный переход эффектов */
+  transition: all 0.3s ease !important; /* Плавный переход эффектов */
 }
 
 /* Увеличение и изменение цвета при наведении */
@@ -1092,183 +1091,5 @@ nav {
   background-color: rgba(0, 0, 0, 0.2); /* Полупрозрачный чёрный фон */
   border-radius: 50%; /* Скругление для создания круга */
   width: 35.71px !important; /* Ширина кнопки */
-  height: 35.71px !important; /* Высота кнопки */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.36s ease;
-  margin-left: 92.86px;
-  margin-right: 92.86px;
 }
-
-/* Эффект при наведении */
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: rgba(0, 0, 0, 0.5) !important; /* Сделать фон менее прозрачным при наведении */
-}
-
-/* Увеличиваем иконки стрелок */
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 10px !important; /* Размер стрелки */
-  font-weight: bold;
-}
-
-.pt img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.quiz-container {
-  margin: 0 auto;
-  padding: 28.57px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background: url('quiz-back.png') no-repeat center center;
-  background-size: cover;
-}
-
-.question-container p {
-  font-size: 24.29px;
-  font-family: 'm', sans-serif;
-  color: var(--background-color);
-  text-align: center;
-  margin-bottom: 35.71px;
-}
-
-.options-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14.29px;
-}
-
-.options-container img {
-  width: 25.71px;
-}
-
-.option, .option2, .option3{
-  background: transparent;
-  backdrop-filter: blur(7.14px); /* Размытие заднего плана */
-  border: 1.43px solid var(--background-color);
-  padding: 18.57px 21.43px;
-  padding-right: 35.71px;
-  border-radius: 71.43px;
-  font-size: 12.86px;
-  color: var(--background-color);
-  cursor: pointer;
-  transition: all 0.21s ease;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  gap: 14.29px;
-}
-
-.option:hover {
-  background: var(--first-color);
-}
-
-.option2:hover {
-  background: var(--first-color);
-}
-
-.option3:hover {
-  background: var(--first-color);
-}
-
-.feedback-container {
-  margin-top: 28.57px;
-  margin-bottom: 28.57px;
-  font-size: 12.86px;
-  color: var(--background-color);
-  font-family: "li", sans-serif;
-  line-height: 21.43px;
-  text-align: center;
-  max-width: 607.14px;
-}
-
-.correct, .correct2, .correct3 {
-  background: #28a745 !important;
-}
-
-.wrong, .wrong2, .wrong3 {
-  background: #dc3545 !important;
-}
-
-.quote1 {
-  font-family: 'l', sans-serif;
-  color: var(--first-color);
-  display: flex;
-  justify-content: center;
-  font-size: 25.71px;
-  padding-left: 42.86px;
-  padding-right: 42.86px;
-  padding-top: 0;
-  align-items: center;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.quote {
-  font-family: 'l', sans-serif;
-  color: var(--second-color);
-  display: flex;
-  justify-content: center;
-  font-size: 25.71px;
-  padding-left: 42.86px;
-  padding-right: 42.86px;
-  padding-bottom: 42.86px;
-  padding-top: 0;
-  align-items: center;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.quote img {
-  width: 28.57px;
-  margin-right: 20px;
-}
-
-.quiz {
-  font-family: 'l', sans-serif;
-  color: var(--second-color);
-  display: flex;
-  justify-content: center;
-  font-size: 25.71px;
-  padding-top: 14.29px;
-  padding-left: 42.86px;
-  padding-right: 42.86px;
-  padding-bottom: 42.86px;
-  align-items: center;
-  flex-direction: column;
-}
-
-.quiz div {
-  display: flex;
-  justify-content: center;
-}
-
-.quiz img {
-  width: 50px;
-  margin: 20px;
-}
-
-.button {
-  cursor: pointer;
-  background: var(--first-color);
-  color: var(--background-color);
-  padding: 5px 31.43px;
-  transition: 0.36s; 
-  margin-top: 7.14px;
-}
-
-.button__text p {
-  font-family: "m", sans-serif;
-  font-size: 12.86px;
-}
-
-/* Остальной код можно обработать по аналогии... */
-
 }
