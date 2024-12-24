@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: 'mi';
-  src: url('fonts/HelveticaNeueCyr-MediumItalic.woff') format('woff');
+  src: url('HelveticaNeueCyr-MediumItalic.woff') format('woff');
 }
 
 @font-face {
@@ -54,6 +54,7 @@ a {
   text-decoration: none;
 }
 
+
 /* Основные стили */
 body {
   margin: 0;  /* Убираем стандартные отступы браузера */
@@ -61,6 +62,7 @@ body {
   font-family: 'r', sans-serif;
   background-color: var(--background-color);
   font-size: 14px;
+
 }
 
 
@@ -71,6 +73,7 @@ header{
   background-color: var(--second-color);
   width: 100%;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .banner img{
@@ -85,7 +88,7 @@ header{
 
 nav {
 	font-size: 12px;
-  font-family: 'm';
+  font-family: 'm', sans-serif;
   color: var(--background-color);
 	height: 80px;
 	width: 100%;
@@ -224,7 +227,7 @@ nav {
 }
 
 .part {
-  font-family: 'l';
+  font-family: 'l', sans-serif;
   font-size: 18px;
   color: var(--second-color);
   margin: 0 0 19px;
@@ -232,7 +235,7 @@ nav {
 }
 
 .title {
-  font-family: 't';
+  font-family: 't', sans-serif;
   font-size: 60px;
   color: var(--first-color);
   line-height: 1;
@@ -241,7 +244,7 @@ nav {
 }
 
 .under_title{
-  font-family: 't';
+  font-family: 't', sans-serif;
   font-size: 41px;
   color: var(--first-color);
   line-height: 1;
@@ -250,7 +253,7 @@ nav {
 }
 
 .description, .list {
-  font-family: 'l';
+  font-family: 'l', sans-serif;
   font-size: 18px;
   color: var(--second-color);
   line-height: 1.6;
@@ -266,10 +269,20 @@ nav {
   z-index: 1; /* За текстом */
 }
 
+.postscriptum {
+  margin-top: 20px;
+  margin-left: 388px;
+  font-family: 'l', sans-serif;
+  font-size: 18px;
+  color: var(--second-color);
+  line-height: 1.6;
+}
+
 .swiper {
   height: 120vh;
   max-height: 810px;
   max-width: 1440px;
+
 }
 
 .swiper-slide {
@@ -282,6 +295,12 @@ nav {
   background-size: cover;                 /* Растягивает картинку на всю область */
   background-position: center;            /* Центрирует картинку */
   background-repeat: no-repeat; 
+  cursor: grab;
+  transition: transform 0.3s ease-out;
+}
+
+.swiper-slide:active {
+  cursor: grabbing;
 }
 
 .swiper-slide p {
@@ -304,31 +323,44 @@ nav {
 .swiper-pagination-bullet {
   width: 16px !important; /* Размер кружков */
   height: 16px !important;
-  background-color: rgba(255, 255, 255, 0.4) !important; /* Серый цвет */
+  background-color: rgba(0, 0, 0, 0.2) !important; /* Серый цвет */
   border-radius: 50% !important; /* Делаем их круглыми */
   margin: 0 30px !important; /* Расстояние между кружками */
-  opacity: 0.6 !important; /* Прозрачность */
+  opacity: 0.7 !important; /* Прозрачность */
   transition: all 0.3s ease !important; /* Плавный переход эффектов */
 }
 
+/* Увеличение и изменение цвета при наведении */
+.swiper-pagination-bullet:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Белый цвет при наведении */
+  transform: scale(1.2); /* Увеличение */
+}
+
+/* Стили для активного элемента */
 .swiper-pagination-bullet-active {
   background-color: var(--background-color) !important; /* Белый цвет активной точки */
+  transform: scale(1.2); /* Увеличение активного элемента */
   opacity: 1 !important; /* Полная непрозрачность */
-  transform: scale(1.2) !important; /* Увеличение активного элемента */
+}
+
+/* Чтобы активная точка оставалась белой при наведении */
+.swiper-pagination-bullet-active:hover {
+  background-color: var(--background-color) !important; /* Оставляем белый цвет */
+  transform: scale(1.2); /* Ещё большее увеличение при наведении */
 }
 
 /* Стиль для кнопок */
 .swiper-button-next,
 .swiper-button-prev {
   color: #fff !important; /* Белый цвет стрелок */
-  background-color: rgba(255, 255, 255, 0.4); /* Полупрозрачный чёрный фон */
+  background-color: rgba(0, 0, 0, 0.2); /* Полупрозрачный чёрный фон */
   border-radius: 50%; /* Скругление для создания круга */
-  width: 40px !important; /* Ширина кнопки */
-  height: 40px !important; /* Высота кнопки */
+  width: 50px !important; /* Ширина кнопки */
+  height: 50px !important; /* Высота кнопки */
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
   margin-left: 130px;
   margin-right: 130px;
 }
@@ -336,13 +368,13 @@ nav {
 /* Эффект при наведении */
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important; /* Сделать фон менее прозрачным при наведении */
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Сделать фон менее прозрачным при наведении */
 }
 
 /* Увеличиваем иконки стрелок */
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 12px !important; /* Размер стрелки */
+  font-size: 14px !important; /* Размер стрелки */
   font-weight: bold;
 }
 
@@ -366,7 +398,7 @@ nav {
 
 .question-container p {
   font-size: 34px;
-  font-family: 'm';
+  font-family: 'm', sans-serif;
   color: var(--background-color);
   text-align: center;
   margin-bottom: 50px;
@@ -417,7 +449,7 @@ nav {
   margin-bottom: 40px;
   font-size: 18px;
   color: var(--background-color);
-  font-family: "li";
+  font-family: "li", sans-serif;
   line-height: 30px;
   text-align: center;
   max-width: 850px;
@@ -431,12 +463,32 @@ nav {
   background: #dc3545 !important;
 }
 
+.quote {
+  font-family: 'l', sans-serif;
+  color: var(--second-color);
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+  padding-top: 0;
+  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.quote img {
+  width: 40px;
+  margin-right: 28px;
+}
+
 .quiz {
   font-family: 'l', sans-serif;
   color: var(--second-color);
   display: flex;
   justify-content: center;
-  font-size: 41px;
+  font-size: 36px;
   padding: 60px;
   align-items: center;
   flex-direction: column;
@@ -448,7 +500,7 @@ nav {
 }
 
 .quiz img {
-  width: 80px;
+  width: 70px;
   margin: 28px;
 }
 
@@ -456,14 +508,14 @@ nav {
   cursor: pointer;
   background: var(--first-color);
   color: var(--background-color);
-  border-radius: 6px;
+  border-radius: 10px;
   padding: 5px 34px;
-  transition: .2s; 
+  transition: .5s; 
   margin-top: 10px;
 }
 
 .button__text p {
-  font-family: "m";
+  font-family: "m", sans-serif;
   font-size: 18px;
 }
 
@@ -472,7 +524,7 @@ nav {
 }
 
 .button__text p {
-  font-family: "m";
+  font-family: "m", sans-serif;
   font-size: 18px;
 }
 
