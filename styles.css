@@ -1087,10 +1087,7 @@ nav {
 /* Стиль для кнопок */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #fff !important; /* Белый цвет стрелок */
-  background-color: rgba(0, 0, 0, 0.2); /* Полупрозрачный чёрный фон */
-  border-radius: 50%; /* Скругление для создания круга */
-  width: 35.71px !important; /* Ширина кнопки */
+display: none;
 }
 
 .options-container {
