@@ -1092,4 +1092,14 @@ nav {
   border-radius: 50%; /* Скругление для создания круга */
   width: 35.71px !important; /* Ширина кнопки */
 }
+
+.options-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.offer {
+  display: none;
+}
 }
