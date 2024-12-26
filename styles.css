@@ -69,6 +69,10 @@ body {
   display: none;
 }
 
+.mob_footer {
+  display: none;
+}
+
 
 
 header{
@@ -754,7 +758,7 @@ nav {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   
 
 /* Основные стили */
@@ -969,6 +973,7 @@ header{
 }
 
 .background {
+  display: none;
   position: absolute;
   right: 0;
   background: no-repeat center center;
@@ -1112,6 +1117,10 @@ header{
   align-items: flex-start;
 }
 
+.quote img {
+  width: 20px;
+  margin-right: 14px;
+}
 
 .offer {
   display: none;
@@ -1139,6 +1148,30 @@ header{
 }
 .mob_footer img {
   width: 100%;
+}
+
+.quiz {
+  font-family: 'l', sans-serif;
+  color: var(--second-color);
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quiz div {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz img {
+  width: 35px;
+  margin: 14px;
 }
 
 }
