@@ -1152,6 +1152,7 @@ header{
 }
 .mob_footer img {
   width: 100%;
+  display: block;
 }
 
 .quiz {
