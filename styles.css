@@ -72,6 +72,10 @@ body {
 .mob_footer {
   display: none;
 }
+.mob_footer img {
+  width: 100%;
+  display: none;
+}
 
 
 
