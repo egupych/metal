@@ -402,7 +402,7 @@ nav {
   height: 16px !important;
   background-color: rgba(0, 0, 0, 0.4) !important; /* Серый цвет */
   border-radius: 50% !important; /* Делаем их круглыми */
-  margin: 0 30px !important; /* Расстояние между кружками */
+  margin: 0 20px !important; /* Расстояние между кружками */
   opacity: 0.7 !important; /* Прозрачность */
   transition: all 0.3s ease !important; /* Плавный переход эффектов */
 }
