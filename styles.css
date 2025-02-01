@@ -413,7 +413,7 @@ nav {
 .background2 {
   position: absolute;
   right: 0;
-  bottom: 0;
+  
   background: no-repeat center center;
   background-size: cover;
   opacity: 1; /* Прозрачность */
