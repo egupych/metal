@@ -216,7 +216,7 @@ nav {
 .under_narrative {
   position: relative;
   background-color: var(--background-color2);
-  padding: 63px 0px;
+  padding: 40px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -354,6 +354,7 @@ nav {
 
 }
 
+
 .swiper-slide {
   text-align: center;
   display: flex;
@@ -366,6 +367,12 @@ nav {
   background-repeat: no-repeat; 
   cursor: grab;
   transition: transform 0.3s ease-out;
+}
+
+.swiper-slide {
+  width: 100% !important;  /* Растягиваем слайд на всю ширину */
+  background-size: cover;   /* Покрытие всего блока изображением */
+  background-position: center;
 }
 
 .swiper-slide::after {
@@ -613,6 +620,7 @@ nav {
   padding: 7px 44px;
   transition: .5s; 
   margin-top: 10px;
+  border-radius: 4px;
 }
 
 .button__text p {
@@ -875,7 +883,6 @@ header{
 
 .narrative {
   position: relative;
-  padding: 45px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -893,7 +900,7 @@ header{
 .under_narrative {
   position: relative;
   background-color: var(--background-color2);
-  padding: 45px 0px;
+  padding: 49px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
