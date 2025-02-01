@@ -86,3 +86,40 @@ document.querySelectorAll('.option3').forEach(option3 => {
 		}
 	});
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+	const contents = document.querySelectorAll('.content'); // Находим все блоки
+  
+	if (!contents.length) return; // Если нет ни одного блока, выходим
+  
+	const observer = new IntersectionObserver((entries, observer) => {
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  entry.target.classList.add('animate'); // Добавляем класс анимации
+		  observer.unobserve(entry.target); // Останавливаем наблюдение для этого блока
+		}
+	  });
+	}, { threshold: 0.3 });
+  
+	contents.forEach(content => observer.observe(content)); // Наблюдаем за каждым блоком
+  });
+  
+
+  // Функция для отслеживания, когда карточка попадает в область видимости
+const observer = new IntersectionObserver((entries, observer) => {
+	entries.forEach(entry => {
+	  if (entry.isIntersecting) {
+		entry.target.classList.add('visible'); // Добавляем класс для анимации
+		observer.unobserve(entry.target); // Останавливаем отслеживание, когда карточка появилась
+	  }
+	});
+  }, { threshold: 0.5 }); // 50% карточки должно быть видно
+  
+  // Наблюдаем за всеми карточками
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+	observer.observe(card);
+  });
+  
+
+  
