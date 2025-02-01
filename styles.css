@@ -259,7 +259,7 @@ nav {
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--second-color);
   line-height: 1.6;
 }
@@ -323,6 +323,7 @@ nav {
 .background {
   position: absolute;
   right: 0;
+  top: 0;
   background: no-repeat center center;
   background-size: cover;
   opacity: 1; /* Прозрачность */
@@ -332,6 +333,7 @@ nav {
 .background2 {
   position: absolute;
   right: 0;
+  bottom: 0;
   background: no-repeat center center;
   background-size: cover;
   opacity: 1; /* Прозрачность */
@@ -779,6 +781,9 @@ nav {
 
 @media (max-width: 900px) {
   
+.desktop-br {
+  display: none;
+}
 
 /* Основные стили */
 body {
@@ -908,12 +913,12 @@ header{
 }
 
 .question-container p {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .card {
   background: var(--background-color2);
-  padding: 21.43px;
+  padding: 30px;
   transition: transform 0.3s ease;
   text-align: left;
 }
@@ -934,7 +939,7 @@ header{
 }
 
 .card p {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--second-color);
   line-height: 1.14;
 }
