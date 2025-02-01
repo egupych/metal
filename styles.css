@@ -188,7 +188,7 @@ nav {
 
 .container {
   background-color: var(--background-color);
-  margin: 70px auto;
+  margin: 80px auto;
 }
 
 .narrative {
@@ -205,12 +205,12 @@ nav {
 
 .air 
 {
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 .under_container {
   background-color: var(--background-color2);
-  margin: 70px auto;
+  margin: 80px auto;
 }
 
 .under_narrative {
@@ -894,13 +894,13 @@ header{
 
 .under_container {
   background-color: var(--background-color2);
-  margin: 50px auto;
+  margin: 40px auto;
 }
 
 .under_narrative {
   position: relative;
   background-color: var(--background-color2);
-  padding: 49px 0px;
+  padding: 20px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
