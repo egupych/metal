@@ -506,7 +506,7 @@ nav {
   width: 36px;
 }
 
-.option, .option2, .option3{
+.option, .option2, .option3 {
   background: transparent;
   backdrop-filter: blur(10px); /* Размытие заднего плана */
   border: 2px solid var(--background-color);
@@ -538,7 +538,7 @@ nav {
 
 .feedback-container{
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   font-size: 18px;
   color: var(--background-color);
   font-family: "li", sans-serif;
