@@ -1009,7 +1009,9 @@ header{
 
 .question-container p {
   font-size: 30px;
+  line-height: 100%;
 }
+
 
 .card {
   background: var(--background-color2);
@@ -1071,7 +1073,7 @@ header{
 
 .title {
   font-family: 't', sans-serif;
-  font-size: 42.86px;
+  font-size: 34px;
   color: var(--first-color);
   line-height: 1;
   margin: 0 0 19.29px;
@@ -1245,6 +1247,8 @@ header{
   flex-direction: row;
   align-items: flex-start;
 }
+
+
 
 .quote img {
   width: 20px;
